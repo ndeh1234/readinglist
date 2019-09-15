@@ -43,7 +43,7 @@ def add_book():
     if new_book in all_books:
         ui.message('The book already exists')
     else:
-    store.add_book(new_book)
+     store.add_book(new_book)
         
     print("\n") # adding blank line after list of books
     ui.message('New book Added!')

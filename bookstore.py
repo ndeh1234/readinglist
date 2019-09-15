@@ -15,6 +15,11 @@ class BookStore:
             # TODO raise BookError if book with same author and title is already in list. Don't add the new book. Use the exact_match function
             self._books.append(book)
 
+            """ Represents one book in the program. 
+               Before books are saved, create without ID then call save() method to save to DB and create an ID. 
+               Future calls to save() will update the database record for the book with this id. """
+
+
 
         def delete_book(self, book):
             """ Removes book from store. Raises BookError if book not in store. """
