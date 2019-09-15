@@ -46,6 +46,8 @@ class BookStore:
             """
             book = self.get_book_by_id(id)
             book.read = read
+            while True:
+                print("The book has been", book.read)
             # TODO raise BookError if book not found. Hint: get_book_by_id returns None if book is not found.
 
 
