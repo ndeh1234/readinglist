@@ -19,6 +19,11 @@ class BookStore:
                Before books are saved, create without ID then call save() method to save to DB and create an ID. 
                Future calls to save() will update the database record for the book with this id. """
 
+        def save(self):
+            if self.id:
+                self.bookstore._update_book(self)
+            else:
+                self.bookstore._add_book(self)
 
 
         def delete_book(self, book):
