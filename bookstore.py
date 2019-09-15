@@ -10,10 +10,16 @@ class BookStore:
             self._books = []
 
         def add_book(self, book):
+
             """ Adds book to store. Should error if a book with exact author and title is already in the store.
+
              :param book the book to add"""
             # TODO raise BookError if book with same author and title is already in list. Don't add the new book. Use the exact_match function
-            self._books.append(book)
+
+            try:
+             self._books.append(book)
+
+
 
             """ Represents one book in the program. 
                Before books are saved, create without ID then call save() method to save to DB and create an ID. 
