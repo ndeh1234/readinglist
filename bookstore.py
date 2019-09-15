@@ -18,6 +18,8 @@ class BookStore:
 
             try:
              self._books.append(book)
+            except ValueError:
+
 
 
 
