@@ -97,6 +97,8 @@ def change_read():
 
 def quit_program():
     s = input("Enter q or Q to quit: ")
+    while (s != 'q' and s != 'Q'):
+        s = input("Invalid input. Enter q or Q to quit: ")
 
     ui.message('Thanks and bye!')
 
