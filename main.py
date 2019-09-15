@@ -99,6 +99,9 @@ def quit_program():
     s = input("Enter q or Q to quit: ")
     while (s != 'q' and s != 'Q'):
         s = input("Invalid input. Enter q or Q to quit: ")
+        print("Thanks and bye!")
+
+    quit_program()
 
     ui.message('Thanks and bye!')
 
