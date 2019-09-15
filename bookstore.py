@@ -19,6 +19,7 @@ class BookStore:
             try:
              self._books.append(book)
             except ValueError:
+                raise BookError('Tried to add a book that already exist')
 
 
 
